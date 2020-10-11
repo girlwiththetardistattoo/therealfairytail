@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #FFE3E1;
+	font-family: 'Caveat', cursive;
+}
+.container {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0;
+}
+.home {
+	margin: 0;
+	padding: 0;
+	height: 700px;
+	background: url(./img/cory-meilany-pVdGj8oVK10-unsplash.jpg) 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+	font-family: 'Prata', serif;
+	font-weight: 400;
+	background: rgba(255, 227, 225, 0.5);
+	padding: 10px;
+	margin: 5px;
+	font-size: 30px;
+	color: #323232;
+}
+.text {
+	display: flex;
+	justify-content: center;
+}
+.textarea {
+	max-width: 700px;
+	margin: 70px 10px;
+	padding: 30px;
+	background: rgba(255, 243, 239, .7);
+	box-shadow: 10px 10px 10px #C8C8C8;
+}
+.letter {
+	font-size: 30px;
+	color: #FEB8A1;
+}
+a {
+	color: #FEB8A1;
+	text-decoration: none;
+}
+.textarea p {
+	font-weight: 400;
+	font-size: 24px;
+	color: #323232;
+}
+.question {
+	text-align: center;
+	font-family: 'Prata', serif;
+	margin: 70px auto; 
+	color: #323232;
+}
+button {
+	cursor: pointer;
+	outline: none;
+	border-radius: 30px;
+	font-family: 'Prata', serif;
+	font-weight: 400;
+	padding:20px 30px;
+	background: #FDCCBD;
+	border: none;
+	margin-top: 30px;
+}
+button:hover {
+	background: #FCC4B2;
+}
+button:active {
+	background: #FFB69F;
+}
+
+.modals {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 20px;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 60px 60px;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
+  transition: 0.2s all linear;
+	background: #FAF5F2;
+	display: none;
+	opacity: 0;
+	font-weight: 400;
+	font-size: 18px;
+}
+.modals_active {
+	display: block;
+	opacity: 1;
+}
